@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form action="/give_feedback" method="post">
+        <label for="feedback_choice">Choose feedback option:</label>
+        <select id="feedback_choice" name="feedback_choice">
+            <option value="1">How likely are you to churn?</option>
+            <option value="2">What factors influenced your decision?</option>
+            <option value="3">Any specific services or features you'd like to see improved?</option>
+            <option value="4">General comments or suggestions</option>
+        </select>
+        <br><br>
+        <label for="detailed_feedback">Enter detailed feedback:</label><br>
+        <textarea id="detailed_feedback" name="detailed_feedback" rows="4" cols="50"></textarea>
+        <br><br>
+        <input type="submit" value="Submit Feedback">
+    </form>
+</body>
+</html>

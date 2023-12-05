@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <center>
+        <h1>Prediction Result</h1>
+        {% if prediction == 1 %}
+            <p><strong>Predicted Churn:</strong> Yes, the customer will terminate the service.</p>
+            <p><a href="/give_feedback">Provide Feedback</a></p>
+        {% else %}
+            <p><strong>Predicted Churn:</strong> No, the customer is likely to continue using Telco Services.</p>
+        {% endif %}
+    </center>
+</body>
+</html>
